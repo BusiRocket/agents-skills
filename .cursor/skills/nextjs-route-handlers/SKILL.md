@@ -13,6 +13,7 @@ Patterns for thin, maintainable route handlers in Next.js App Router.
 ## When to Use
 
 Use this skill when:
+
 - Creating or refactoring `app/api/**/route.ts` files
 - Implementing API endpoints
 - Validating request inputs

@@ -62,4 +62,5 @@ When creating a new Tauri command, **all three steps are required**:
 ## Validation
 
 After meaningful changes, run:
+
 - Project standard checks (e.g. `yarn check:all`).

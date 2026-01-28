@@ -5,8 +5,8 @@ Modals should consume store state directly:
 ```tsx
 // The modal reads its own visibility from the store
 export function JsonModal({ resolvedTheme }: JsonModalProps) {
-  const isOpen = useUiStore((state) => state.isJsonModalOpen)
-  const closeModal = useUiStore((state) => state.closeJsonModal)
+  const isOpen = useUiStore((state) => state.isJsonModalOpen);
+  const closeModal = useUiStore((state) => state.closeJsonModal);
   // ...
 }
 ```

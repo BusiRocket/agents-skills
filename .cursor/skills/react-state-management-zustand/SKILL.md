@@ -14,6 +14,7 @@ Opinionated guidance for using Zustand in React applications.
 ## When to Use
 
 Use this skill when:
+
 - Implementing global UI state (modals, progress indicators)
 - Managing shared data across components
 - Avoiding prop drilling

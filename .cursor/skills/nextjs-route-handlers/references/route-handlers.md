@@ -8,6 +8,7 @@
 ## Thin Handler Rule (STRICT)
 
 Route handlers must be thin:
+
 - Parse/validate request input
 - Call a `services/<area>/...` function
 - Return an explicit response

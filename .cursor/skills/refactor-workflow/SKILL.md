@@ -13,6 +13,7 @@ Strict, step-by-step refactoring guidance for maintaining code quality.
 ## When to Use
 
 Use this skill when:
+
 - Refactoring files with multiple exports (use `@file` workflow)
 - Splitting components/hooks/utils into smaller files
 - Moving inline types to `types/`

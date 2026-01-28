@@ -13,6 +13,7 @@ Setup and styling patterns for Tailwind CSS v4 projects.
 ## When to Use
 
 Use this skill when:
+
 - Setting up Tailwind CSS v4 in a project
 - Writing component styles with Tailwind utilities
 - Deciding when to extract custom CSS vs using utilities

@@ -13,6 +13,7 @@ Strict, reusable standards for Rust/Tauri desktop applications.
 ## When to Use
 
 Use this skill when:
+
 - Writing Rust code in Tauri projects
 - Creating new Tauri commands
 - Separating SQL queries and prompts from Rust code

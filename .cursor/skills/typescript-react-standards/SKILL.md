@@ -13,6 +13,7 @@ Strict, reusable standards for TypeScript/React projects.
 ## When to Use
 
 Use this skill when:
+
 - Writing or refactoring `.ts` / `.tsx`
 - Moving inline types into `types/`
 - Enforcing consistent type naming and result shapes

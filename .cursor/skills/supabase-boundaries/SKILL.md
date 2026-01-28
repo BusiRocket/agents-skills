@@ -14,6 +14,7 @@ Service boundary patterns for Supabase projects.
 ## When to Use
 
 Use this skill only when:
+
 - Working in a project that uses Supabase
 - Creating or refactoring Supabase access code
 - Enforcing service boundaries for database access

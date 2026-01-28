@@ -13,6 +13,7 @@ Reusable patterns for scalable React codebases.
 ## When to Use
 
 Use this skill when:
+
 - Writing or refactoring `.tsx` components
 - Extracting hooks into `hooks/<area>/useXxx.ts`
 - Removing helpers from components/hooks into `utils/`

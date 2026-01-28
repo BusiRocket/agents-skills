@@ -13,6 +13,7 @@ Reusable, project-agnostic conventions designed to keep codebases scalable and e
 ## When to Use
 
 Use this skill when:
+
 - Starting a new feature and deciding where code should live
 - Refactoring to improve maintainability
 - Enforcing “one-thing-per-file” discipline

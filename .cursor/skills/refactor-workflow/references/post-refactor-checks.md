@@ -3,6 +3,7 @@
 ## Golden Path
 
 Run this after every meaningful change:
+
 - Project standard checks (e.g. `yarn check:all`).
 
 ## If something fails
@@ -14,6 +15,7 @@ Run this after every meaningful change:
 ## When to Split (fast heuristics)
 
 Split the file immediately if any is true:
+
 - More than one exported symbol.
 - More than one responsibility (UI + state + helpers).
 - Any helper function exists inside a component/hook.

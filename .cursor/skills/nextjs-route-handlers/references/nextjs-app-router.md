@@ -24,5 +24,6 @@
 This repository enforces "one export per file" for your own modules, **but Next.js special files require extra exports**.
 
 Allowed exceptions:
+
 - `app/**/layout.tsx`, `app/**/page.tsx`: `default export` + `metadata` / `generateMetadata` / `viewport` (and similar Next file-convention exports).
 - `app/api/**/route.ts`: multiple HTTP method exports (GET/POST/...) + route config exports.
