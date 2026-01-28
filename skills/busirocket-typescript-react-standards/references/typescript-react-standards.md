@@ -2,7 +2,8 @@
 
 ## Goal
 
-Optimize the codebase for agent context and long-term maintainability by enforcing **many small, focused files**.
+Optimize the codebase for agent context and long-term maintainability by
+enforcing **many small, focused files**.
 
 ## Language & Style
 
@@ -21,24 +22,28 @@ Optimize the codebase for agent context and long-term maintainability by enforci
 
 Some Next.js files require additional exports by convention. Allowed exceptions:
 
-- `app/**/layout.tsx`, `app/**/page.tsx`: `default export` + `metadata` / `generateMetadata` / `viewport` (etc.).
+- `app/**/layout.tsx`, `app/**/page.tsx`: `default export` + `metadata` /
+  `generateMetadata` / `viewport` (etc.).
 - `app/api/**/route.ts`: multiple HTTP method exports and route config exports.
 
 ## Types (STRICT)
 
-- **No inline `interface`/`type` declarations** in components, hooks, utils, services, or route handlers.
+- **No inline `interface`/`type` declarations** in components, hooks, utils,
+  services, or route handlers.
 - Put types in `types/<area>/...` as dedicated files.
 - One type per file.
 
 ## Helpers (STRICT)
 
 - Do not keep helper functions inside components/hooks.
-- If a helper is needed, extract it to `utils/<area>/SomeHelper.ts` (one function per file).
+- If a helper is needed, extract it to `utils/<area>/SomeHelper.ts` (one
+  function per file).
 
 ## Next.js TS Hygiene (docs-aligned)
 
 - Do not edit `next-env.d.ts` (it is generated).
-- If you need custom `.d.ts`, create a new file and include it in `tsconfig.json`.
+- If you need custom `.d.ts`, create a new file and include it in
+  `tsconfig.json`.
 
 ## Validation
 

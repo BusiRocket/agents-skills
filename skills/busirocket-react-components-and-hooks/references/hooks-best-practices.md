@@ -7,7 +7,8 @@
 
 ## No Helpers Inside Hooks (STRICT)
 
-- Hooks contain only state/effects/memos and call helpers imported from `utils/`.
+- Hooks contain only state/effects/memos and call helpers imported from
+  `utils/`.
 - Any helper must be its own file (one exported function per file).
 
 ## No Types Inside Hooks (STRICT)
@@ -18,7 +19,8 @@
 ## Stable API
 
 - Return the minimal meaningful shape.
-- Prefer stable references for handlers/derived values (`useCallback`, `useMemo`).
+- Prefer stable references for handlers/derived values (`useCallback`,
+  `useMemo`).
 
 ## Side Effects
 

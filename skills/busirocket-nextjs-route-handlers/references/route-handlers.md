@@ -28,4 +28,5 @@ No business logic, no DB/network access directly in the handler.
 
 - If Cache Components is enabled later:
   - `GET` handlers follow the same model as UI routes.
-  - `use cache` **cannot** be used directly inside a Route Handler body; extract it to a helper function.
+  - `use cache` **cannot** be used directly inside a Route Handler body; extract
+    it to a helper function.

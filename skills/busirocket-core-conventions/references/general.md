@@ -2,7 +2,8 @@
 
 ## Core Goal
 
-Optimize for agent context by keeping **many small, focused files** and explicit boundaries.
+Optimize for agent context by keeping **many small, focused files** and explicit
+boundaries.
 
 ## Agent Defaults
 
@@ -25,4 +26,5 @@ Optimize for agent context by keeping **many small, focused files** and explicit
 
 ## Quality Gate
 
-- Always run the project's standard checks after meaningful changes (e.g. `yarn check:all`).
+- Always run the project's standard checks after meaningful changes (e.g.
+  `yarn check:all`).

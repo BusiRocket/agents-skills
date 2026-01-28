@@ -5,11 +5,7 @@
   "private": true,
   "scripts": {
     "format": "prettier --write \"**/*.md\"",
-    "format:check": "prettier --check \"**/*.md\"",
-    "validate": "node scripts/format-and-check.js --skip-format",
-    "check": "node scripts/format-and-check.js --check-only",
-    "check:format": "node scripts/format-and-check.js --check-only --skip-validate",
-    "check:validate": "node scripts/format-and-check.js --check-only --skip-format"
+    "format:check": "prettier --check \"**/*.md\""
   },
   "devDependencies": {
     "prettier": "^3.0.0"

@@ -1,6 +1,9 @@
 ---
 name: busirocket-react-state-management-zustand
-description: Zustand state management patterns for React applications. Use when implementing global state, modal visibility, cross-component communication, or avoiding prop drilling. This is an opinionated pattern recommendation.
+description:
+  Zustand state management patterns for React applications. Use when
+  implementing global state, modal visibility, cross-component communication, or
+  avoiding prop drilling. This is an opinionated pattern recommendation.
 disable-model-invocation: true
 metadata:
   author: cristiandeluxe
@@ -24,7 +27,8 @@ Use this skill when:
 
 - One store per domain (e.g., `uiStore`, `workspaceStore`, `statusLogStore`).
 - Keep stores focused; split when they grow too large.
-- Use selectors to minimize re-renders: `useStore((state) => state.specificValue)`.
+- Use selectors to minimize re-renders:
+  `useStore((state) => state.specificValue)`.
 - Actions should be defined in the store, not in components.
 - Modals should read their visibility state from stores, not receive as props.
 
@@ -32,7 +36,8 @@ Use this skill when:
 
 - One store per domain: `uiStore`, `workspaceStore`, `statusLogStore`, etc.
 - Keep stores focused; split when they grow too large.
-- Use selectors to minimize re-renders: `useStore((state) => state.specificValue)`.
+- Use selectors to minimize re-renders:
+  `useStore((state) => state.specificValue)`.
 - Actions should be defined in the store, not in components.
 
 ## References (progressive disclosure)

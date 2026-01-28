@@ -1,6 +1,9 @@
 ---
 name: busirocket-tailwindcss-v4
-description: Tailwind CSS v4 setup and styling strategy. Use when configuring Tailwind v4, writing component styles, deciding between utility classes and custom CSS, and avoiding style drift.
+description:
+  Tailwind CSS v4 setup and styling strategy. Use when configuring Tailwind v4,
+  writing component styles, deciding between utility classes and custom CSS, and
+  avoiding style drift.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
@@ -25,13 +28,15 @@ Use this skill when:
 - Keep that global CSS imported from the root layout.
 - Prefer Tailwind utilities in `className` for most styling.
 - Avoid large custom CSS files; keep custom CSS truly global (resets, tokens).
-- Avoid heavy use of arbitrary values unless necessary; prefer consistent tokens.
+- Avoid heavy use of arbitrary values unless necessary; prefer consistent
+  tokens.
 
 ## Class Strategy
 
 - If class strings become hard to read:
   - Extract a small presentational component.
-  - Or extract a `components/<area>/...` wrapper rather than inventing large custom CSS.
+  - Or extract a `components/<area>/...` wrapper rather than inventing large
+    custom CSS.
 
 ## References (progressive disclosure)
 

@@ -1,6 +1,9 @@
 ---
 name: busirocket-refactor-workflow
-description: Strict refactoring workflow for TypeScript/React codebases. Use when refactoring files with multiple exports, splitting components/hooks/utils, moving inline types to types/, and enforcing post-refactor quality gates.
+description:
+  Strict refactoring workflow for TypeScript/React codebases. Use when
+  refactoring files with multiple exports, splitting components/hooks/utils,
+  moving inline types to types/, and enforcing post-refactor quality gates.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
@@ -21,7 +24,8 @@ Use this skill when:
 
 ## Non-Negotiables (MUST)
 
-- After any refactor: run the project's standard checks (e.g. `yarn check:all`) as a mandatory quality gate.
+- After any refactor: run the project's standard checks (e.g. `yarn check:all`)
+  as a mandatory quality gate.
 - If a file has multiple responsibilities, split immediately.
 - If a hook/component contains helpers, extract them.
 - If a file declares types inline, move them to `types/`.

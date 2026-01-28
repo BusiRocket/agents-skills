@@ -1,6 +1,9 @@
 ---
 name: busirocket-supabase-boundaries
-description: Supabase access patterns and service boundaries. Use only when working with Supabase projects. Centralize Supabase access in services/ and never call Supabase directly from components/hooks/utils/route handlers.
+description:
+  Supabase access patterns and service boundaries. Use only when working with
+  Supabase projects. Centralize Supabase access in services/ and never call
+  Supabase directly from components/hooks/utils/route handlers.
 disable-model-invocation: true
 metadata:
   author: cristiandeluxe
@@ -21,10 +24,13 @@ Use this skill only when:
 
 ## Non-Negotiables (MUST)
 
-- **Never call Supabase directly** from components, hooks, utils, or route handlers.
-- **Centralize access** in dedicated Supabase service wrappers (e.g. `services/supabase/*`).
+- **Never call Supabase directly** from components, hooks, utils, or route
+  handlers.
+- **Centralize access** in dedicated Supabase service wrappers (e.g.
+  `services/supabase/*`).
 - Keep wrappers small, focused, and typed.
-- Never import `@supabase/supabase-js` outside a single Supabase client module (e.g. `lib/supabase.ts`) or your Supabase service wrappers.
+- Never import `@supabase/supabase-js` outside a single Supabase client module
+  (e.g. `lib/supabase.ts`) or your Supabase service wrappers.
 
 ## References (progressive disclosure)
 

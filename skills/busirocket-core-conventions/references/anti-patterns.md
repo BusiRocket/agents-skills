@@ -4,9 +4,11 @@ These patterns destroy agent context quality and make refactors risky.
 
 ## File Structure
 
-- **Multiple exports per file** (any combination of component/hook/function/type).
+- **Multiple exports per file** (any combination of
+  component/hook/function/type).
 - **Barrel/index files** (`index.ts`) that hide dependencies.
-- **Growing “misc” modules** (`helpers.ts`, `utils.ts`, `types.ts`, `constants.ts`).
+- **Growing “misc” modules** (`helpers.ts`, `utils.ts`, `types.ts`,
+  `constants.ts`).
 
 ## Types
 
@@ -16,8 +18,10 @@ These patterns destroy agent context quality and make refactors risky.
 ## React
 
 - **Fetching/DB calls inside components**.
-- **Helpers inside components/hooks** (formatting, parsing, mapping) instead of `utils/`.
-- Marking a whole subtree `'use client'` just to use one hook; prefer smaller client islands.
+- **Helpers inside components/hooks** (formatting, parsing, mapping) instead of
+  `utils/`.
+- Marking a whole subtree `'use client'` just to use one hook; prefer smaller
+  client islands.
 
 ## App Router / API
 
@@ -26,4 +30,5 @@ These patterns destroy agent context quality and make refactors risky.
 
 ## Dependencies
 
-- Adding libraries for trivial helpers (date formatting, string utils) without explicit approval.
+- Adding libraries for trivial helpers (date formatting, string utils) without
+  explicit approval.

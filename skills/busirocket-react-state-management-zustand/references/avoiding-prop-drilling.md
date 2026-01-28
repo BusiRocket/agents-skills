@@ -4,12 +4,12 @@ Instead of passing callbacks through multiple components:
 
 ```tsx
 // BAD: Prop drilling
-<Parent onOpenModal={setIsOpen}>
+;<Parent onOpenModal={setIsOpen}>
   <Child onOpenModal={onOpenModal} />
-</Parent>;
+</Parent>
 
 // GOOD: Store access
-const openModal = useUiStore((state) => state.openModal);
+const openModal = useUiStore((state) => state.openModal)
 ```
 
 ## Pattern

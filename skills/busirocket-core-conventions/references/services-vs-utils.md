@@ -13,7 +13,8 @@ Use `utils/<area>/xxx.ts` when code is:
 - `utils/invoices/formatInvoiceNumber.ts`
 - `utils/dates/parseIsoDate.ts`
 
-**API:** single exported function; throw only for programmer errors; return explicit values.
+**API:** single exported function; throw only for programmer errors; return
+explicit values.
 
 ## services/ (external boundary)
 
@@ -30,7 +31,8 @@ Use `services/<area>/xxx.ts` when code:
 
 **API guidance:**
 
-- Return domain data or typed result objects; avoid returning framework primitives from deep services.
+- Return domain data or typed result objects; avoid returning framework
+  primitives from deep services.
 - Prefer explicit error shapes over throwing for expected failures.
 
 ## app route handlers

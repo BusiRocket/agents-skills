@@ -29,4 +29,5 @@ Prefer one of these:
 
 - Never return unvalidated request input.
 - Do not throw for expected errors; return `{ error }` with an explicit status.
-- Keep mapping minimal inside the route handler; do it in `services/` when possible.
+- Keep mapping minimal inside the route handler; do it in `services/` when
+  possible.

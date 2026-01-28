@@ -1,6 +1,9 @@
 ---
 name: busirocket-rust-tauri-standards
-description: Rust and Tauri standards for maintainable desktop apps. Use when writing Rust code in Tauri projects, creating Tauri commands, separating SQL/prompts from Rust code, and enforcing one-thing-per-file discipline.
+description:
+  Rust and Tauri standards for maintainable desktop apps. Use when writing Rust
+  code in Tauri projects, creating Tauri commands, separating SQL/prompts from
+  Rust code, and enforcing one-thing-per-file discipline.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
@@ -22,9 +25,12 @@ Use this skill when:
 ## Non-Negotiables (MUST)
 
 - **One public symbol per file** (function / type / trait).
-- **No inline SQL strings** in `.rs` files; use dedicated SQL files with `include_str!()` (e.g. `src-tauri/sql/<area>/Xxx.sql`).
-- **No inline LLM/AI prompts** in `.rs` files; use dedicated prompt files with `include_str!()` (e.g. `src-tauri/prompts/<area>/Xxx.prompt`).
-- When creating a Tauri command: (1) create command file, (2) register in invoke handler, (3) add to permissions allowlist.
+- **No inline SQL strings** in `.rs` files; use dedicated SQL files with
+  `include_str!()` (e.g. `src-tauri/sql/<area>/Xxx.sql`).
+- **No inline LLM/AI prompts** in `.rs` files; use dedicated prompt files with
+  `include_str!()` (e.g. `src-tauri/prompts/<area>/Xxx.prompt`).
+- When creating a Tauri command: (1) create command file, (2) register in invoke
+  handler, (3) add to permissions allowlist.
 
 ## Module Layout
 

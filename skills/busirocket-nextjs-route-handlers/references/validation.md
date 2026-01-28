@@ -24,4 +24,5 @@ Validate inputs consistently without adding validation libraries.
 ## Rules
 
 - No inline types or helpers inside route handlers.
-- If validation logic grows, split into dedicated helpers (one function per file).
+- If validation logic grows, split into dedicated helpers (one function per
+  file).

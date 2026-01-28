@@ -2,7 +2,8 @@
 
 ## Goal
 
-Make it obvious where new code belongs so agents can create **many small files** without guessing.
+Make it obvious where new code belongs so agents can create **many small files**
+without guessing.
 
 ## Decision Tree
 
@@ -20,4 +21,5 @@ If you are writing...
 - **One exported symbol per file** (component / hook / function / type).
 - **No inline types** outside `types/`.
 - **No helpers inside components/hooks**; helpers go to `utils/`.
-- **Route handlers must be thin**: validate input, call a `services/` function, return a response.
+- **Route handlers must be thin**: validate input, call a `services/` function,
+  return a response.

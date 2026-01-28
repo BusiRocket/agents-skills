@@ -1,6 +1,9 @@
 ---
 name: busirocket-core-conventions
-description: General engineering conventions optimized for AI agents. Use when creating or refactoring codebases and you need strict file discipline, clear module boundaries, naming/layout rules, and anti-pattern avoidance.
+description:
+  General engineering conventions optimized for AI agents. Use when creating or
+  refactoring codebases and you need strict file discipline, clear module
+  boundaries, naming/layout rules, and anti-pattern avoidance.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
@@ -8,7 +11,8 @@ metadata:
 
 # Core Conventions
 
-Reusable, project-agnostic conventions designed to keep codebases scalable and easy for AI agents to navigate.
+Reusable, project-agnostic conventions designed to keep codebases scalable and
+easy for AI agents to navigate.
 
 ## When to Use
 
@@ -22,7 +26,8 @@ Use this skill when:
 ## Non-Negotiables (MUST)
 
 - Keep **many small, focused files** with explicit boundaries.
-- **One exported symbol per file** for your own modules (component/hook/function/type).
+- **One exported symbol per file** for your own modules
+  (component/hook/function/type).
 - **No barrel/index files** (e.g. `index.ts`) that hide dependencies.
 - **No inline types** outside `types/`.
 - **No helper functions inside components or hooks**; extract to `utils/`.

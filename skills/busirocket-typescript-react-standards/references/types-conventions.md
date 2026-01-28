@@ -2,7 +2,8 @@
 
 ## One Type Per File (STRICT)
 
-- Each file under `types/` exports **exactly one** `interface` (preferred) or `type` (unions only).
+- Each file under `types/` exports **exactly one** `interface` (preferred) or
+  `type` (unions only).
 - File name must match the exported symbol.
 
 ## Naming Patterns
@@ -17,11 +18,13 @@ Prefer explicit names that communicate role:
 
 ## Result Shape (recommended)
 
-For boundaries that can fail (services), prefer a typed result object instead of throwing for expected failures:
+For boundaries that can fail (services), prefer a typed result object instead of
+throwing for expected failures:
 
 - `type XxxResult = { ok: true; value: T } | { ok: false; error: XxxError }`
 
 ## Where Types Are Allowed
 
 - Types must live in `types/<area>/...`.
-- Do not declare inline types/interfaces in components/hooks/utils/services/route handlers.
+- Do not declare inline types/interfaces in
+  components/hooks/utils/services/route handlers.
