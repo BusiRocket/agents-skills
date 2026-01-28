@@ -21,7 +21,9 @@ A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri pr
 
 ## Installation
 
-### Using npx skills add (Recommended)
+### Recommended: Using npx skills add
+
+The easiest way to install these skills is using the official installer, which automatically detects and installs to all compatible agents:
 
 ```bash
 npx skills add BusiRocket/agents-skills
@@ -33,35 +35,11 @@ Or use the deprecated (but still working) command:
 npx add-skill BusiRocket/agents-skills
 ```
 
-### Manual Installation
-
-To use these skills across all projects, copy or symlink the `skills/` directory to:
-
-- `~/.cursor/skills/` (Cursor)
-- `~/.claude/skills/` (Claude Desktop/Code)
-- `~/.codex/skills/` (Codex)
-
-Example:
-
-```bash
-# For Cursor
-ln -s /path/to/this/repo/skills ~/.cursor/skills
-
-# For Claude
-ln -s /path/to/this/repo/skills ~/.claude/skills
-```
-
-Or use the sync script from this repo:
-
-```bash
-scripts/sync-global-skills.sh
-```
-
-Copy mode (instead of symlink):
-
-```bash
-scripts/sync-global-skills.sh --copy
-```
+The installer will:
+- Detect all compatible agents on your system (Cursor, Claude Code, Codex, GitHub Copilot, etc.)
+- Let you select which skills to install
+- Install them globally or per-project
+- Create symlinks automatically
 
 ## Usage
 
@@ -71,6 +49,30 @@ Skills are automatically activated by agents when relevant tasks are detected. O
 /busirocket-supabase-boundaries
 /busirocket-react-state-management-zustand
 ```
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Setup
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Scripts
+
+- `npm run format` - Format all Markdown files
+- `npm run format:check` - Check Markdown formatting without writing
+- `npm run validate` - Validate all skills (check SKILL.md structure)
+- `npm run check` - Run format check and validation (CI-friendly)
+- `npm run check:format` - Only check formatting
+- `npm run check:validate` - Only validate skills
 
 ## Skill Structure
 

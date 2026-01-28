@@ -1,0 +1,25 @@
+{
+  "name": "@busirocket/agents-skills",
+  "version": "1.0.0",
+  "description": "A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri projects",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.md\"",
+    "format:check": "prettier --check \"**/*.md\"",
+    "validate": "bash scripts/format-and-check.sh --skip-format",
+    "check": "bash scripts/format-and-check.sh --check-only",
+    "check:format": "bash scripts/format-and-check.sh --check-only --skip-validate",
+    "check:validate": "bash scripts/format-and-check.sh --check-only --skip-format"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BusiRocket/agents-skills.git"
+  },
+  "license": "MIT"
+}
