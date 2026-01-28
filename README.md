@@ -24,13 +24,13 @@ A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri pr
 ### Using npx skills add (Recommended)
 
 ```bash
-npx skills add BusiRocket/agent-skills
+npx skills add BusiRocket/agents-skills
 ```
 
 Or use the deprecated (but still working) command:
 
 ```bash
-npx add-skill BusiRocket/agent-skills
+npx add-skill BusiRocket/agents-skills
 ```
 
 ### Manual Installation
