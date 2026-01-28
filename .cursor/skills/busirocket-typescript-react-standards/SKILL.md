@@ -1,5 +1,5 @@
 ---
-name: typescript-react-standards
+name: busirocket-typescript-react-standards
 description: TypeScript and React standards for maintainable codebases. Use when creating or refactoring TS/TSX to enforce one-thing-per-file, type conventions, and Next.js special-file export exceptions.
 metadata:
   author: cristiandeluxe

@@ -1,5 +1,5 @@
 ---
-name: rust-tauri-standards
+name: busirocket-rust-tauri-standards
 description: Rust and Tauri standards for maintainable desktop apps. Use when writing Rust code in Tauri projects, creating Tauri commands, separating SQL/prompts from Rust code, and enforcing one-thing-per-file discipline.
 metadata:
   author: cristiandeluxe

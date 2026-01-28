@@ -5,7 +5,7 @@ usage() {
   cat <<'EOF'
 sync-global-skills.sh
 
-Sync this repo's .cursor/skills to global Agent Skills directories.
+Sync this repo's .cursor/skills into global Agent Skills directories.
 
 Usage:
   scripts/sync-global-skills.sh [--copy] [--source PATH] [--targets "A,B,C"] [--dry-run]
@@ -70,31 +70,97 @@ fi
 
 IFS=',' read -r -a targets <<< "$targets_csv"
 
+list_skills() {
+  find "$source_dir" -mindepth 1 -maxdepth 1 -type d -print0
+}
+
+cleanup_legacy_symlink() {
+  local target="$1"
+  local legacy="$target/skills"
+  if [[ -L "$legacy" ]]; then
+    local resolved
+    resolved="$(readlink "$legacy" || true)"
+    if [[ "$resolved" == "$source_dir" ]]; then
+      if [[ "$dry_run" == "true" ]]; then
+        echo "rm -f \"$legacy\""
+      else
+        rm -f "$legacy"
+      fi
+    fi
+  fi
+}
+
 sync_symlink() {
   local target="$1"
-  local parent
-  parent="$(dirname "$target")"
-  if [[ "$dry_run" == "true" ]]; then
-    echo "mkdir -p \"$parent\""
-    echo "ln -sfn \"$source_dir\" \"$target\""
-    return 0
+  if [[ -L "$target" ]]; then
+    if [[ "$dry_run" == "true" ]]; then
+      echo "rm -f \"$target\""
+    else
+      rm -f "$target"
+    fi
   fi
-  mkdir -p "$parent"
-  ln -sfn "$source_dir" "$target"
+  if [[ "$dry_run" == "true" ]]; then
+    echo "mkdir -p \"$target\""
+  else
+    mkdir -p "$target"
+  fi
+
+  cleanup_legacy_symlink "$target"
+
+  while IFS= read -r -d '' skill_dir; do
+    local skill_name
+    skill_name="$(basename "$skill_dir")"
+    if [[ "$dry_run" == "true" ]]; then
+      echo "ln -sfn \"$skill_dir\" \"$target/$skill_name\""
+    else
+      ln -sfn "$skill_dir" "$target/$skill_name"
+    fi
+  done < <(list_skills)
+
+  if [[ -f "$target/README.md" ]]; then
+    if [[ "$dry_run" == "true" ]]; then
+      echo "rm -f \"$target/README.md\""
+    else
+      rm -f "$target/README.md"
+    fi
+  fi
 }
 
 sync_copy() {
   local target="$1"
-  local parent
-  parent="$(dirname "$target")"
-  if [[ "$dry_run" == "true" ]]; then
-    echo "mkdir -p \"$parent\""
-    echo "rsync -a --delete \"$source_dir/\" \"$target/\""
-    return 0
+  if [[ -L "$target" ]]; then
+    if [[ "$dry_run" == "true" ]]; then
+      echo "rm -f \"$target\""
+    else
+      rm -f "$target"
+    fi
   fi
-  mkdir -p "$parent"
-  mkdir -p "$target"
-  rsync -a --delete "$source_dir/" "$target/"
+  if [[ "$dry_run" == "true" ]]; then
+    echo "mkdir -p \"$target\""
+  else
+    mkdir -p "$target"
+  fi
+
+  cleanup_legacy_symlink "$target"
+
+  while IFS= read -r -d '' skill_dir; do
+    local skill_name
+    skill_name="$(basename "$skill_dir")"
+    if [[ "$dry_run" == "true" ]]; then
+      echo "rsync -a --delete \"$skill_dir/\" \"$target/$skill_name/\""
+    else
+      mkdir -p "$target/$skill_name"
+      rsync -a --delete "$skill_dir/" "$target/$skill_name/"
+    fi
+  done < <(list_skills)
+
+  if [[ -f "$target/README.md" ]]; then
+    if [[ "$dry_run" == "true" ]]; then
+      echo "rm -f \"$target/README.md\""
+    else
+      rm -f "$target/README.md"
+    fi
+  fi
 }
 
 for target in "${targets[@]}"; do

@@ -1,5 +1,5 @@
 ---
-name: react-state-management-zustand
+name: busirocket-react-state-management-zustand
 description: Zustand state management patterns for React applications. Use when implementing global state, modal visibility, cross-component communication, or avoiding prop drilling. This is an opinionated pattern recommendation.
 disable-model-invocation: true
 metadata:

@@ -1,5 +1,5 @@
 ---
-name: refactor-workflow
+name: busirocket-refactor-workflow
 description: Strict refactoring workflow for TypeScript/React codebases. Use when refactoring files with multiple exports, splitting components/hooks/utils, moving inline types to types/, and enforcing post-refactor quality gates.
 metadata:
   author: cristiandeluxe

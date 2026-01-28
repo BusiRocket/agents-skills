@@ -6,18 +6,18 @@ A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri pr
 
 ### Core Skills (Auto-activated)
 
-- **`core-conventions`** - General engineering conventions, file discipline, boundaries, naming/layout, and anti-patterns
-- **`typescript-react-standards`** - TypeScript/React export discipline, type conventions, Next.js special-file exceptions
-- **`react-components-and-hooks`** - React component and hook structure rules (one-component/one-hook per file)
-- **`nextjs-route-handlers`** - Next.js App Router patterns, thin route handlers, validation, response shapes
-- **`refactor-workflow`** - Strict refactoring workflow with quality gates
-- **`tailwindcss-v4`** - Tailwind CSS v4 setup and styling strategy
-- **`rust-tauri-standards`** - Rust/Tauri one-thing-per-file, SQL/prompt separation, command checklist
+- **`busirocket-core-conventions`** - General engineering conventions, file discipline, boundaries, naming/layout, and anti-patterns
+- **`busirocket-typescript-react-standards`** - TypeScript/React export discipline, type conventions, Next.js special-file exceptions
+- **`busirocket-react-components-and-hooks`** - React component and hook structure rules (one-component/one-hook per file)
+- **`busirocket-nextjs-route-handlers`** - Next.js App Router patterns, thin route handlers, validation, response shapes
+- **`busirocket-refactor-workflow`** - Strict refactoring workflow with quality gates
+- **`busirocket-tailwindcss-v4`** - Tailwind CSS v4 setup and styling strategy
+- **`busirocket-rust-tauri-standards`** - Rust/Tauri one-thing-per-file, SQL/prompt separation, command checklist
 
 ### Optional Skills (Manual invocation only)
 
-- **`supabase-boundaries`** - Supabase access patterns and service boundaries (use `/supabase-boundaries` when working with Supabase)
-- **`react-state-management-zustand`** - Zustand state management patterns (use `/react-state-management-zustand` when using Zustand)
+- **`busirocket-supabase-boundaries`** - Supabase access patterns and service boundaries (use `/busirocket-supabase-boundaries` when working with Supabase)
+- **`busirocket-react-state-management-zustand`** - Zustand state management patterns (use `/busirocket-react-state-management-zustand` when using Zustand)
 
 ## Installation
 
@@ -66,8 +66,8 @@ npx add-skill vercel-labs/agent-skills
 Skills are automatically activated by agents when relevant tasks are detected. Optional skills can be invoked manually:
 
 ```
-/supabase-boundaries
-/react-state-management-zustand
+/busirocket-supabase-boundaries
+/busirocket-react-state-management-zustand
 ```
 
 ## Skill Structure

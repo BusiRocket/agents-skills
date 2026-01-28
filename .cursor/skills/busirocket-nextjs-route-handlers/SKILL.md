@@ -1,5 +1,5 @@
 ---
-name: nextjs-route-handlers
+name: busirocket-nextjs-route-handlers
 description: Next.js App Router route handler patterns. Use when creating or refactoring route.ts files, implementing API endpoints, validating request inputs, and returning standardized JSON responses with proper status codes.
 metadata:
   author: cristiandeluxe

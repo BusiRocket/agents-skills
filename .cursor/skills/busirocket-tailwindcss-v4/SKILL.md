@@ -1,5 +1,5 @@
 ---
-name: tailwindcss-v4
+name: busirocket-tailwindcss-v4
 description: Tailwind CSS v4 setup and styling strategy. Use when configuring Tailwind v4, writing component styles, deciding between utility classes and custom CSS, and avoiding style drift.
 metadata:
   author: cristiandeluxe

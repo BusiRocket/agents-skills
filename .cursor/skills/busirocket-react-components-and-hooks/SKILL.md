@@ -1,5 +1,5 @@
 ---
-name: react-components-and-hooks
+name: busirocket-react-components-and-hooks
 description: React component and hook structure rules. Use when writing or refactoring React components, extracting hooks, deciding client vs server components, and enforcing one-component/one-hook per file with no helpers or inline types.
 metadata:
   author: cristiandeluxe
