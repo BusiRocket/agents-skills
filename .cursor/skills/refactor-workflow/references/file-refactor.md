@@ -10,4 +10,4 @@ Use this rule by referencing: `@file`.
 
 ## Mandatory checks after refactor
 
-- `yarn check:all`
+- Project standard checks (e.g. `yarn check:all`).

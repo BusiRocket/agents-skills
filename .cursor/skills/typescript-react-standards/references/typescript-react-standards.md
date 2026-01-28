@@ -44,4 +44,4 @@ Some Next.js files require additional exports by convention. Allowed exceptions:
 
 Run:
 
-- `yarn check:all`
+- Project standard checks (e.g. `yarn check:all`).

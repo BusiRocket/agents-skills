@@ -3,7 +3,7 @@
 ## Golden Path
 
 Run this after every meaningful change:
-- `yarn check:all`
+- Project standard checks (e.g. `yarn check:all`).
 
 ## If something fails
 

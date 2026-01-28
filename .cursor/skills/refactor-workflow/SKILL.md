@@ -20,7 +20,7 @@ Use this skill when:
 
 ## Non-Negotiables (MUST)
 
-- After any refactor: run `yarn check:all` (mandatory quality gate).
+- After any refactor: run the project's standard checks (e.g. `yarn check:all`) as a mandatory quality gate.
 - If a file has multiple responsibilities, split immediately.
 - If a hook/component contains helpers, extract them.
 - If a file declares types inline, move them to `types/`.

@@ -19,4 +19,4 @@
 
 ## Post-Refactor Checks (MANDATORY)
 
-- `yarn check:all`
+- Project standard checks (e.g. `yarn check:all`).

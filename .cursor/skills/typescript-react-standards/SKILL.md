@@ -24,7 +24,7 @@ Use this skill when:
 - **No inline `interface`/`type`** in components/hooks/utils/services/route handlers.
 - Put shared shapes under `types/<area>/...` (**one type per file**).
 - Avoid barrel files (`index.ts`) that hide dependencies.
-- After meaningful changes: run `yarn check:all`.
+- After meaningful changes: run the project's standard checks (e.g. `yarn check:all`).
 
 ## Next.js Special-file Exceptions
 

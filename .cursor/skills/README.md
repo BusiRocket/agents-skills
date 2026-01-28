@@ -43,6 +43,24 @@ ln -s /path/to/this/repo/.cursor/skills ~/.cursor/skills
 ln -s /path/to/this/repo/.cursor/skills ~/.claude/skills
 ```
 
+Or use the sync script from this repo:
+
+```bash
+scripts/sync-global-skills.sh
+```
+
+Copy mode (instead of symlink):
+
+```bash
+scripts/sync-global-skills.sh --copy
+```
+
+If you use `npx add-skill`, you can install from a repo URL (example from the reference repo):
+
+```bash
+npx add-skill vercel-labs/agent-skills
+```
+
 ## Usage
 
 Skills are automatically activated by agents when relevant tasks are detected. Optional skills can be invoked manually:

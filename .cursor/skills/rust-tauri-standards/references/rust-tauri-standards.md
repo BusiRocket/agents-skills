@@ -33,13 +33,13 @@ Optimize for long-term maintainability with **many small, focused files** and ex
 ## SQL Separation (STRICT)
 
 - **No inline SQL strings** inside `.rs` files.
-- Put each query in its own file under `src-tauri/sql/<area>/Xxx.sql`.
+- Put each query in its own file under your SQL directory (e.g. `src-tauri/sql/<area>/Xxx.sql`).
 - Load with `include_str!()` in Rust code.
 
 ## Prompt Separation (STRICT)
 
 - **No inline LLM or AI prompts** inside `.rs` files.
-- Put each prompt in its own file under `src-tauri/prompts/<area>/Xxx.prompt`.
+- Put each prompt in its own file under your prompts directory (e.g. `src-tauri/prompts/<area>/Xxx.prompt`).
 - Load with `include_str!()` in Rust code.
 
 ## Boundaries
@@ -62,4 +62,4 @@ When creating a new Tauri command, **all three steps are required**:
 ## Validation
 
 After meaningful changes, run:
-- `yarn check:all`
+- Project standard checks (e.g. `yarn check:all`).
