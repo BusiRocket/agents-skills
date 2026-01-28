@@ -48,7 +48,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-skills_dir="${repo_root}/.cursor/skills"
+skills_dir="${repo_root}/skills"
 
 if [[ ! -d "$skills_dir" ]]; then
   echo "Skills directory not found: $skills_dir" >&2
@@ -100,7 +100,7 @@ validate_skills() {
     fi
 
     local name_line
-    name_line="$(rg "^name:\\s*.+$" "$skill_file" | head -n 1 | sed 's/^name:\\s*//')"
+    name_line="$(rg "^name:\\s*.+$" "$skill_file" | head -n 1 | sed -E 's/^name:[[:space:]]*//')"
     if [[ -z "$name_line" ]]; then
       echo "Missing frontmatter name in: $skill_file" >&2
       failed="true"

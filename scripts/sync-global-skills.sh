@@ -12,7 +12,7 @@ Usage:
 
 Options:
   --copy         Copy files instead of symlinking (default: symlink).
-  --source PATH  Source skills directory (default: repo/.cursor/skills).
+  --source PATH  Source skills directory (default: repo/skills).
   --targets CSV  Comma-separated target directories.
                  Default: ~/.cursor/skills,~/.claude/skills,~/.codex/skills
   --dry-run      Print actions without making changes.

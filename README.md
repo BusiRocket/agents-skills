@@ -21,13 +21,21 @@ A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri pr
 
 ## Installation
 
-### Local Project
+### Using npx skills add (Recommended)
 
-Skills are automatically detected when placed in `.cursor/skills/` (or `.claude/skills/`, `.codex/skills/`).
+```bash
+npx skills add BusiRocket/agent-skills
+```
 
-### Global Installation
+Or use the deprecated (but still working) command:
 
-To use these skills across all projects, copy or symlink this directory to:
+```bash
+npx add-skill BusiRocket/agent-skills
+```
+
+### Manual Installation
+
+To use these skills across all projects, copy or symlink the `skills/` directory to:
 
 - `~/.cursor/skills/` (Cursor)
 - `~/.claude/skills/` (Claude Desktop/Code)
@@ -37,10 +45,10 @@ Example:
 
 ```bash
 # For Cursor
-ln -s /path/to/this/repo/.cursor/skills ~/.cursor/skills
+ln -s /path/to/this/repo/skills ~/.cursor/skills
 
 # For Claude
-ln -s /path/to/this/repo/.cursor/skills ~/.claude/skills
+ln -s /path/to/this/repo/skills ~/.claude/skills
 ```
 
 Or use the sync script from this repo:
@@ -53,12 +61,6 @@ Copy mode (instead of symlink):
 
 ```bash
 scripts/sync-global-skills.sh --copy
-```
-
-If you use `npx add-skill`, you can install from a repo URL (example from the reference repo):
-
-```bash
-npx add-skill vercel-labs/agent-skills
 ```
 
 ## Usage
