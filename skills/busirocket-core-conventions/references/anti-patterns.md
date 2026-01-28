@@ -32,3 +32,14 @@ These patterns destroy agent context quality and make refactors risky.
 
 - Adding libraries for trivial helpers (date formatting, string utils) without
   explicit approval.
+
+## Vite / Browser Runtime
+
+- **`process` or `process.env`** in frontend code; use `import.meta.env` (Vite)
+  for environment variables.
+- **Node globals** (`process`, `Buffer`) at runtime in bundles that run in
+  browser or webview; they are undefined and will crash.
+- Patterns like `typeof process !== 'undefined'` in frontend code—they can
+  still ship to the bundle and cause issues.
+- **Hardcoded environment values** instead of using `.env` files and
+  `import.meta.env`.
