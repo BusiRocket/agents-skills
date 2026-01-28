@@ -39,7 +39,38 @@ Use this skill when:
 - `app/api/**/route.ts`: allow multiple HTTP method exports and route config
   exports.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/typescript-react-standards.md`
-- `references/types-conventions.md`
+### TypeScript Standards
+
+- `ts-language-style` - Language & style (interface vs type, const vs let,
+  English-only)
+- `ts-one-thing-per-file` - One thing per file (STRICT)
+- `ts-nextjs-exceptions` - Next.js special-file exceptions
+- `ts-types-strict` - Types (STRICT) - no inline types
+- `ts-helpers-strict` - Helpers (STRICT) - no helpers in components/hooks
+- `ts-nextjs-hygiene` - Next.js TS hygiene (docs-aligned)
+- `ts-validation` - Validation (run checks after changes)
+
+### Types Conventions
+
+- `types-one-type-per-file` - One type per file (STRICT)
+- `types-naming-patterns` - Naming patterns (Params, Result, Error, Props)
+- `types-result-shape` - Result shape for boundaries that can fail
+- `types-where-allowed` - Where types are allowed
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/ts-one-thing-per-file.md
+rules/ts-types-strict.md
+rules/types-one-type-per-file.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

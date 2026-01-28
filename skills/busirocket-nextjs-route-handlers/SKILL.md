@@ -43,9 +43,52 @@ Use this skill when:
 - `'use client'` creates a boundary; keep client islands small.
 - Props from Server -> Client must be **serializable**.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/nextjs-app-router.md`
-- `references/route-handlers.md`
-- `references/api-response-shapes.md`
-- `references/validation.md`
+### Next.js App Router
+
+- `nextjs-server-vs-client` - Server vs Client Components (defaults, when to use
+  client)
+- `nextjs-serializable-props` - Props must be serializable from Server to Client
+- `nextjs-protecting-server-code` - Protecting server-only code from client
+  imports
+- `nextjs-special-file-exports` - Allowed extra exports for Next.js special
+  files
+
+### Route Handlers
+
+- `nextjs-route-placement` - Route handler placement and conflicts with pages
+- `nextjs-thin-handler-rule` - Thin handler rule (STRICT)
+- `nextjs-http-methods` - Supported HTTP methods
+- `nextjs-caching-model` - Caching model for route handlers
+- `nextjs-cache-components` - Cache Components note for route handlers
+
+### API Response Shapes
+
+- `nextjs-response-shapes` - Standard JSON response shapes (success/error)
+- `nextjs-status-codes` - HTTP status codes to use
+- `nextjs-response-rules` - Rules for API responses (validation, error handling)
+
+### Validation
+
+- `nextjs-validation-boundaries` - Where validation lives (route handlers,
+  services, utils)
+- `nextjs-validation-patterns` - Validation patterns (unknown inputs, guards)
+- `nextjs-validation-helpers` - Recommended validation helpers
+- `nextjs-validation-rules` - Validation rules (no inline types/helpers)
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/nextjs-thin-handler-rule.md
+rules/nextjs-response-shapes.md
+rules/nextjs-validation-boundaries.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

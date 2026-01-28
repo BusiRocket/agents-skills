@@ -39,6 +39,54 @@ Use this skill when:
 - `src-tauri/src/models/`: domain types (one type per file).
 - No "misc" modules like `helpers.rs` or `common.rs`.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/rust-tauri-standards.md`
+### Language & Style
+
+- `rust-language-style` - Language & style (English-only, struct/enum, error
+  types)
+
+### One Thing Per File
+
+- `rust-one-thing-per-file` - One thing per file (STRICT)
+- `rust-module-manifests` - Module manifests exception (mod.rs)
+
+### Module Layout
+
+- `rust-module-layout` - Module layout (STRICT) - services, utils, models
+
+### SQL Separation
+
+- `rust-sql-separation` - SQL separation (STRICT) - no inline SQL
+
+### Prompt Separation
+
+- `rust-prompt-separation` - Prompt separation (STRICT) - no inline prompts
+
+### Boundaries
+
+- `rust-boundaries` - Boundaries (thin handlers, validate, call service, return)
+
+### Tauri Commands
+
+- `rust-tauri-commands-checklist` - Tauri commands checklist (MANDATORY)
+
+### Validation
+
+- `rust-validation` - Validation (run checks after changes)
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/rust-one-thing-per-file.md
+rules/rust-sql-separation.md
+rules/rust-tauri-commands-checklist.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

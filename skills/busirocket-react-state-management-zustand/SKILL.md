@@ -40,8 +40,36 @@ Use this skill when:
   `useStore((state) => state.specificValue)`.
 - Actions should be defined in the store, not in components.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/zustand-patterns.md`
-- `references/modal-pattern.md`
-- `references/avoiding-prop-drilling.md`
+### Zustand Patterns
+
+- `zustand-when-to-use` - When to use Zustand (modals, global UI state, shared
+  data)
+- `zustand-store-organization` - Store organization (one store per domain,
+  selectors, actions)
+
+### Modal Pattern
+
+- `zustand-modal-pattern` - Modal pattern with Zustand (read visibility from
+  store)
+
+### Avoiding Prop Drilling
+
+- `zustand-avoiding-prop-drilling` - Use Zustand stores instead of prop drilling
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/zustand-store-organization.md
+rules/zustand-modal-pattern.md
+rules/zustand-avoiding-prop-drilling.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

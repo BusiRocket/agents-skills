@@ -38,6 +38,34 @@ Use this skill when:
   - Or extract a `components/<area>/...` wrapper rather than inventing large
     custom CSS.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/tailwindcss-v4.md`
+### Setup
+
+- `tailwind-setup` - Tailwind CSS v4 setup (single global CSS import)
+
+### Class Strategy
+
+- `tailwind-class-strategy` - Prefer utilities, extract components when needed
+- `tailwind-avoid-drift` - Avoid style drift (keep custom CSS global, prefer
+  tokens)
+
+### Ordering
+
+- `tailwind-css-ordering` - CSS order depends on import order
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/tailwind-setup.md
+rules/tailwind-class-strategy.md
+rules/tailwind-avoid-drift.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

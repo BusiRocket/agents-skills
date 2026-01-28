@@ -39,8 +39,39 @@ When referencing `@file` for a one-shot refactor:
 - No inline `interface`/`type` declarations in non-type files.
 - No helper functions inside components/hooks.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/file-refactor.md`
-- `references/refactoring-typescript.md`
-- `references/post-refactor-checks.md`
+### @file Refactor Workflow
+
+- `refactor-file-workflow` - @file refactor workflow (strict constraints)
+- `refactor-mandatory-checks` - Mandatory checks after refactor
+
+### Refactoring TypeScript/React
+
+- `refactor-goals` - Goals for refactoring (many small files, one export per
+  file)
+- `refactor-decision-rules` - Decision rules for when to split files
+- `refactor-never-index-files` - Never use index files
+- `refactor-post-refactor-checks` - Post-refactor checks (MANDATORY)
+
+### Post-Refactor Checks
+
+- `refactor-golden-path` - Golden path for post-refactor checks
+- `refactor-if-something-fails` - What to do if checks fail
+- `refactor-when-to-split` - Fast heuristics for when to split files
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/refactor-file-workflow.md
+rules/refactor-decision-rules.md
+rules/refactor-post-refactor-checks.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

@@ -32,7 +32,36 @@ Use this skill when:
 - Prefer server-side rendering boundaries wisely (avoid `'use client'` for large
   subtrees).
 
-## References (progressive disclosure)
+## Rules
 
-- `references/component-patterns.md`
-- `references/hooks-best-practices.md`
+### Component Patterns
+
+- `react-one-component-per-file` - One component per file (STRICT)
+- `react-client-vs-server` - Client vs Server Components (App Router)
+- `react-folder-namespacing` - Folder namespacing for complex components
+- `react-performance` - Performance optimization (memo, useCallback)
+- `react-accessibility` - Accessibility best practices
+
+### Hooks Best Practices
+
+- `react-one-hook-per-file` - One hook per file (STRICT)
+- `react-no-helpers-in-hooks` - No helpers inside hooks (STRICT)
+- `react-no-types-in-hooks` - No types inside hooks (STRICT)
+- `react-stable-api` - Stable API for hooks
+- `react-side-effects` - Side effects in hooks
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/react-one-component-per-file.md
+rules/react-one-hook-per-file.md
+rules/react-client-vs-server.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices

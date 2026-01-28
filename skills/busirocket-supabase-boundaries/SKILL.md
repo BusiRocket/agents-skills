@@ -32,7 +32,25 @@ Use this skill only when:
 - Never import `@supabase/supabase-js` outside a single Supabase client module
   (e.g. `lib/supabase.ts`) or your Supabase service wrappers.
 
-## References (progressive disclosure)
+## Rules
 
-- `references/supabase-access.md`
-- `references/supabase-services.md`
+### Supabase Access
+
+- `supabase-access-rule` - Isolate Supabase access in service wrappers
+- `supabase-services-usage` - Route handlers, hooks, utils, and components must
+  NOT call Supabase directly
+
+## How to Use
+
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/supabase-access-rule.md
+rules/supabase-services-usage.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Code examples (correct and incorrect patterns)
+- Additional context and best practices
