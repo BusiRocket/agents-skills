@@ -36,6 +36,7 @@ npx add-skill BusiRocket/agents-skills
 ```
 
 The installer will:
+
 - Detect all compatible agents on your system (Cursor, Claude Code, Codex, GitHub Copilot, etc.)
 - Let you select which skills to install
 - Install them globally or per-project
@@ -54,7 +55,7 @@ Skills are automatically activated by agents when relevant tasks are detected. O
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Setup
