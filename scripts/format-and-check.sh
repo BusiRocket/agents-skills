@@ -93,14 +93,14 @@ validate_skills() {
       continue
     fi
 
-    if ! rg -q "^---$" "$skill_file"; then
+    if ! grep -q "^---$" "$skill_file"; then
       echo "Missing YAML frontmatter fence in: $skill_file" >&2
       failed="true"
       continue
     fi
 
     local name_line
-    name_line="$(rg "^name:\\s*.+$" "$skill_file" | head -n 1 | sed -E 's/^name:[[:space:]]*//')"
+    name_line="$(grep -E "^name:[[:space:]]*.+$" "$skill_file" | head -n 1 | sed -E 's/^name:[[:space:]]*//')"
     if [[ -z "$name_line" ]]; then
       echo "Missing frontmatter name in: $skill_file" >&2
       failed="true"
