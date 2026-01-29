@@ -57,6 +57,11 @@ Use this skill when:
 
 - `validation-no-inline` - No inline validation logic in components/hooks
 
+## Related Skills
+
+- `busirocket-nextjs-route-handlers` - Validation in route handlers
+- `busirocket-core-conventions` - File boundaries and structure
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

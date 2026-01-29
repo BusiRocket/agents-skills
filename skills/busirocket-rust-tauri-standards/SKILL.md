@@ -75,6 +75,10 @@ Use this skill when:
 
 - `rust-validation` - Validation (run checks after changes)
 
+## Related Skills
+
+- `busirocket-core-conventions` - General file structure principles (similar patterns)
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

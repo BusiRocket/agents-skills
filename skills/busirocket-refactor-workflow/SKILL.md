@@ -60,6 +60,12 @@ When referencing `@file` for a one-shot refactor:
 - `refactor-if-something-fails` - What to do if checks fail
 - `refactor-when-to-split` - Fast heuristics for when to split files
 
+## Related Skills
+
+- `busirocket-core-conventions` - File structure and boundaries
+- `busirocket-typescript-react-standards` - TypeScript standards to enforce
+- `busirocket-react-components-and-hooks` - Component/hook patterns
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

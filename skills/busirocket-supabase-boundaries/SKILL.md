@@ -40,6 +40,10 @@ Use this skill only when:
 - `supabase-services-usage` - Route handlers, hooks, utils, and components must
   NOT call Supabase directly
 
+## Related Skills
+
+- `busirocket-core-conventions` - Service boundaries and structure
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

@@ -77,6 +77,12 @@ Use this skill when:
 - `nextjs-validation-helpers` - Recommended validation helpers
 - `nextjs-validation-rules` - Validation rules (no inline types/helpers)
 
+## Related Skills
+
+- `busirocket-react-components-and-hooks` - Component patterns and Server/Client boundaries
+- `busirocket-validation` - Validation strategies (Zod schemas, guard helpers)
+- `busirocket-core-conventions` - File structure and boundaries
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

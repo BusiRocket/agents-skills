@@ -90,6 +90,12 @@ Use this skill when:
 - `core-anti-patterns-vite-browser` - Vite/Browser runtime anti-patterns
   (process.env, Node globals)
 
+## Related Skills
+
+- `busirocket-typescript-react-standards` - TypeScript-specific standards
+- `busirocket-react-components-and-hooks` - React component patterns
+- `busirocket-refactor-workflow` - Refactoring workflow
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

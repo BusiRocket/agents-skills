@@ -59,6 +59,12 @@ Use this skill when:
 - `types-result-shape` - Result shape for boundaries that can fail
 - `types-where-allowed` - Where types are allowed
 
+## Related Skills
+
+- `busirocket-core-conventions` - General file structure (one-thing-per-file, boundaries)
+- `busirocket-react-components-and-hooks` - Component and hook structure
+- `busirocket-refactor-workflow` - Refactoring workflow for TypeScript/React
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

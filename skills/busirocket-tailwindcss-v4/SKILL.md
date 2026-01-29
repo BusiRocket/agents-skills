@@ -54,6 +54,10 @@ Use this skill when:
 
 - `tailwind-css-ordering` - CSS order depends on import order
 
+## Related Skills
+
+- `busirocket-react-components-and-hooks` - Component extraction patterns
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

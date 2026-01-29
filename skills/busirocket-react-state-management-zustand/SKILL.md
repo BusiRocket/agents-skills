@@ -58,6 +58,10 @@ Use this skill when:
 
 - `zustand-avoiding-prop-drilling` - Use Zustand stores instead of prop drilling
 
+## Related Skills
+
+- `busirocket-react-components-and-hooks` - Component patterns
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:

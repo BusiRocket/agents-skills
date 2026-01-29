@@ -50,6 +50,12 @@ Use this skill when:
 - `react-stable-api` - Stable API for hooks
 - `react-side-effects` - Side effects in hooks
 
+## Related Skills
+
+- `busirocket-core-conventions` - General file structure and boundaries
+- `busirocket-typescript-react-standards` - TypeScript and type conventions
+- `busirocket-nextjs-route-handlers` - Server vs Client Components (detailed)
+
 ## How to Use
 
 Read individual rule files for detailed explanations and code examples:
