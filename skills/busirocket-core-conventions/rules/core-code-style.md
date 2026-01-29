@@ -7,6 +7,8 @@ Maintain consistent, readable code across the codebase.
 ## Style Rules
 
 - English-only code, comments, and identifiers.
+- Adhere to SOLID principles (Single Responsibility, Open/Closed, Liskov
+  Substitution, Interface Segregation, Dependency Inversion).
 - Prefer pure functions and hooks; avoid unnecessary classes.
 - Avoid deep nesting; extract early.
 

@@ -8,7 +8,8 @@ Establish the golden path for post-refactor quality checks.
 
 Run this after every meaningful change:
 
-- Project standard checks (e.g. `yarn check:all`).
+- Project standard checks (e.g. `yarn check:all` or
+  `yarn type-check && yarn format && yarn lint`).
 
 ## Examples
 

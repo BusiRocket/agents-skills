@@ -57,6 +57,7 @@ Use this skill when:
 - `react-folder-namespacing` - Folder namespacing for complex components
 - `react-performance` - Performance optimization (memo, useCallback)
 - `react-accessibility` - Accessibility best practices
+- `react-component-testing` - Component tests in `__tests__`, React Testing Library
 
 ### Hooks Best Practices
 

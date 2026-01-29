@@ -68,6 +68,11 @@ export const formatAmount = (amount: number): string => {
 import { formatAmount } from "utils/invoices/formatAmount"
 ```
 
+## Props and Data Flow
+
+- Pass full props into components; handle logic inside the component rather
+  than passing pre-computed data from the parent.
+
 ## Best Practices
 
 - Split files with multiple responsibilities immediately

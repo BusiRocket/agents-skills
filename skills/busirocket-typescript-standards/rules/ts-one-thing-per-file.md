@@ -10,6 +10,10 @@ Enforce strict one-thing-per-file discipline.
   - `.tsx`: one exported React component.
   - `.ts` (utils/services): one exported function.
   - `.ts` (types): one exported `interface` or `type`.
+- Avoid large literal collections (arrays/maps of >10–15 entries) inside logic
+  files; place keyword lists, lookup maps, and config tables in dedicated
+  constant files (e.g. `utils/<area>/constants/xxxConstants.ts`) and import
+  them.
 
 ## Examples
 

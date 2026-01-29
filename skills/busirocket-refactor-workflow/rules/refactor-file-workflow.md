@@ -4,11 +4,27 @@
 
 Use this rule by referencing: `@file`.
 
+## Algorithm
+
+1. **Scan** – Identify responsibilities: UI rendering, state/effects and handlers,
+   pure helpers, shared shapes (types), large constant collections.
+2. **Decide** – TSX: keep only presentational concerns. State/effects →
+   `hooks/<area>/useXxx.ts`. Pure helpers → `utils/<area>/xxx.ts`. All
+   interfaces/types → `types/<area>/Xxx.ts`. Large constant arrays/maps →
+   `utils/<area>/constants/xxxConstants.ts`. Child components → subfolder under
+   parent.
+3. **Apply** – Update imports, remove unused imports, ensure no circular
+   dependencies.
+4. **Run checks** – Run project checks (e.g. `yarn type-check && yarn format &&
+   yarn lint` or `yarn check:all`); fix all errors before proceeding.
+
 ## Hard Constraints
 
 - Exactly one exported symbol per file.
 - No inline `interface`/`type` declarations in non-type files.
 - No helper functions inside components/hooks.
+- No large literal arrays/maps in logic files; extract to dedicated constant
+  modules.
 
 ## Examples
 

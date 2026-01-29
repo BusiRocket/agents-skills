@@ -57,6 +57,7 @@ When referencing `@file` for a one-shot refactor:
 ### Post-Refactor Checks
 
 - `refactor-golden-path` - Golden path for post-refactor checks
+- `refactor-file-size-guidelines` - File size targets and max lines
 - `refactor-if-something-fails` - What to do if checks fail
 - `refactor-when-to-split` - Fast heuristics for when to split files
 

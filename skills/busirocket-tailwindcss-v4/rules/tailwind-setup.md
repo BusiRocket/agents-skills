@@ -8,6 +8,7 @@ Set up Tailwind CSS v4 correctly.
 
 - Import Tailwind via a single global CSS entry: `@import 'tailwindcss';`
 - Keep that global CSS imported from the root layout.
+- Use Tailwind CSS v4 utility classes **without prefix** (no `tw-` or similar).
 
 ## Examples
 

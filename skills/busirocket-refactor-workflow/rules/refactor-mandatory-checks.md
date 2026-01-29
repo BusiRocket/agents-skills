@@ -6,13 +6,17 @@ Ensure code quality after refactoring.
 
 ## Mandatory Checks
 
-- Project standard checks (e.g. `yarn check:all`).
+- After every edit, run project checks (e.g. `yarn check:all` or
+  `yarn type-check && yarn format && yarn lint`).
+- Fix all warnings and errors before proceeding.
 
 ## Examples
 
 ```bash
 # ✅ Correct - run checks after refactor
 yarn check:all
+# or
+yarn type-check && yarn format && yarn lint
 ```
 
 ```bash

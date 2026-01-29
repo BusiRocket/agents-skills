@@ -14,7 +14,8 @@ This rule only applies if/when this repository adds Supabase.
   `services/supabase/*`).
 - Do not call Supabase client methods directly from components, hooks, utils, or
   route handlers.
-- Keep wrappers small, focused, and typed.
+- Keep wrappers small, focused, and typed; prefer one file per domain (e.g.
+  `leaderboard.ts`, `periods.ts`).
 
 ## Examples
 

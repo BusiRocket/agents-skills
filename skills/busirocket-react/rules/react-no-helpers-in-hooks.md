@@ -9,6 +9,8 @@ Keep hooks focused on state/effects, not helper logic.
 - Hooks contain only state/effects/memos and call helpers imported from
   `utils/`.
 - Any helper must be its own file (one exported function per file).
+- Do not keep large constant keyword lists or config maps inside hooks;
+  import them from dedicated constants modules (e.g. `utils/<area>/constants/`).
 
 ## Examples
 

@@ -46,6 +46,16 @@ export const InvoiceCard = (props: InvoiceCardProps) => {
 // Only changed files related to refactor
 ```
 
+## Common Issues & Fixes
+
+| Issue            | Fix                                                |
+|------------------|----------------------------------------------------|
+| Type error: `any`| Use `unknown` and narrow with type guards          |
+| Unused import    | Remove or use the import                           |
+| Missing return type | Add explicit return type annotation             |
+| Circular dependency | Move shared types to `types/` folder            |
+| File too large   | Split into smaller focused files                   |
+
 ## Best Practices
 
 - Fix type errors first

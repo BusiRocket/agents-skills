@@ -55,6 +55,11 @@ export const useInvoice = (id: string) => {
 }
 ```
 
+## Props (when defining component props)
+
+- Keep props minimal and descriptive; pass raw inputs, compute inside.
+- Sort props alphabetically when feasible for consistency.
+
 ## Best Practices
 
 - Return minimal, meaningful shapes

@@ -62,6 +62,11 @@ export const formatAmount = (amount: number): string => {
 import { formatAmount } from "utils/invoices/formatAmount"
 ```
 
+## Coercion for dynamic inputs
+
+- For inputs that may be `string | string[] | unknown`, use a coercion helper
+  instead of casting (e.g. `coerceFirstString(val: unknown): string | null`).
+
 ## Best Practices
 
 - Extract all helpers to `utils/`
