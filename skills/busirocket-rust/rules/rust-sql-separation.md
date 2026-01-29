@@ -8,6 +8,7 @@ Separate SQL queries from Rust code.
 
 - **No inline SQL strings** inside `.rs` files.
 - Put each query in its own file under your SQL directory (e.g.
+  `sql/<area>/Xxx.sql`; in Tauri projects typically
   `src-tauri/sql/<area>/Xxx.sql`).
 - Load with `include_str!()` in Rust code.
 
@@ -15,7 +16,7 @@ Separate SQL queries from Rust code.
 
 ```rust
 // ❌ Incorrect - inline SQL
-// src-tauri/src/services/invoices/create_invoice.rs
+// src/services/invoices/create_invoice.rs
 pub async fn create_invoice(input: CreateInvoiceInput) -> Result<Invoice, InvoiceError> {
     let query = "INSERT INTO invoices (id, amount) VALUES ($1, $2)";
     // SQL should be in separate file
@@ -24,10 +25,10 @@ pub async fn create_invoice(input: CreateInvoiceInput) -> Result<Invoice, Invoic
 
 ```rust
 // ✅ Correct - SQL in separate file
-// src-tauri/sql/invoices/create_invoice.sql
+// sql/invoices/create_invoice.sql
 INSERT INTO invoices (id, amount) VALUES ($1, $2);
 
-// src-tauri/src/services/invoices/create_invoice.rs
+// src/services/invoices/create_invoice.rs
 const CREATE_INVOICE_SQL: &str = include_str!("../../../sql/invoices/create_invoice.sql");
 
 pub async fn create_invoice(input: CreateInvoiceInput) -> Result<Invoice, InvoiceError> {

@@ -8,13 +8,16 @@ Ensure code quality through validation checks.
 
 After meaningful changes, run:
 
-- Project standard checks (e.g. `yarn check:all`).
+- Project standard checks (e.g. `yarn check:all` or `cargo check` /
+  `cargo clippy`).
 
 ## Examples
 
 ```bash
 # ✅ Correct - run checks after changes
 yarn check:all
+# or
+cargo clippy
 ```
 
 ```bash

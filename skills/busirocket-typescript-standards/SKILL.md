@@ -1,8 +1,8 @@
 ---
-name: busirocket-typescript-react-standards
+name: busirocket-typescript-standards
 description:
-  TypeScript and React standards for maintainable codebases. Use when creating
-  or refactoring TS/TSX to enforce one-thing-per-file, type conventions, and
+  TypeScript standards for maintainable codebases. Use when creating or
+  refactoring TS/TSX to enforce one-thing-per-file, type conventions, and
   Next.js special-file export exceptions.
 metadata:
   author: cristiandeluxe
@@ -61,8 +61,9 @@ Use this skill when:
 
 ## Related Skills
 
-- `busirocket-core-conventions` - General file structure (one-thing-per-file, boundaries)
-- `busirocket-react-components-and-hooks` - Component and hook structure
+- `busirocket-core-conventions` - General file structure (one-thing-per-file,
+  boundaries)
+- `busirocket-react` - Component and hook structure
 - `busirocket-refactor-workflow` - Refactoring workflow for TypeScript/React
 
 ## How to Use

@@ -8,6 +8,7 @@ Separate LLM/AI prompts from Rust code.
 
 - **No inline LLM or AI prompts** inside `.rs` files.
 - Put each prompt in its own file under your prompts directory (e.g.
+  `prompts/<area>/Xxx.prompt`; in Tauri projects typically
   `src-tauri/prompts/<area>/Xxx.prompt`).
 - Load with `include_str!()` in Rust code.
 
@@ -15,7 +16,7 @@ Separate LLM/AI prompts from Rust code.
 
 ```rust
 // ❌ Incorrect - inline prompt
-// src-tauri/src/services/ai/generate_summary.rs
+// src/services/ai/generate_summary.rs
 pub async fn generate_summary(text: &str) -> Result<String, AIServiceError> {
     let prompt = "Summarize the following text: {text}";
     // Prompt should be in separate file
@@ -24,10 +25,10 @@ pub async fn generate_summary(text: &str) -> Result<String, AIServiceError> {
 
 ```rust
 // ✅ Correct - prompt in separate file
-// src-tauri/prompts/ai/generate_summary.prompt
+// prompts/ai/generate_summary.prompt
 Summarize the following text: {text}
 
-// src-tauri/src/services/ai/generate_summary.rs
+// src/services/ai/generate_summary.rs
 const GENERATE_SUMMARY_PROMPT: &str = include_str!("../../../prompts/ai/generate_summary.prompt");
 
 pub async fn generate_summary(text: &str) -> Result<String, AIServiceError> {

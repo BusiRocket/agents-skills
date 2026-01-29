@@ -56,7 +56,7 @@ Use this skill when:
 
 ## Related Skills
 
-- `busirocket-react-components-and-hooks` - Component extraction patterns
+- `busirocket-react` - Component extraction patterns
 
 ## How to Use
 

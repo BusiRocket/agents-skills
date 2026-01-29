@@ -59,7 +59,7 @@ Use this skill when:
 
 ## Related Skills
 
-- `busirocket-nextjs-route-handlers` - Validation in route handlers
+- `busirocket-nextjs` - Validation in route handlers
 - `busirocket-core-conventions` - File boundaries and structure
 
 ## How to Use

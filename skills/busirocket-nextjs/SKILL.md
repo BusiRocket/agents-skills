@@ -1,5 +1,5 @@
 ---
-name: busirocket-nextjs-route-handlers
+name: busirocket-nextjs
 description:
   Next.js App Router route handler patterns. Use when creating or refactoring
   route.ts files, implementing API endpoints, validating request inputs, and
@@ -79,7 +79,7 @@ Use this skill when:
 
 ## Related Skills
 
-- `busirocket-react-components-and-hooks` - Component patterns and Server/Client boundaries
+- `busirocket-react` - Component patterns and Server/Client boundaries
 - `busirocket-validation` - Validation strategies (Zod schemas, guard helpers)
 - `busirocket-core-conventions` - File structure and boundaries
 

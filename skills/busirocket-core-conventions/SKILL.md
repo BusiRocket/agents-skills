@@ -92,8 +92,8 @@ Use this skill when:
 
 ## Related Skills
 
-- `busirocket-typescript-react-standards` - TypeScript-specific standards
-- `busirocket-react-components-and-hooks` - React component patterns
+- `busirocket-typescript-standards` - TypeScript-specific standards
+- `busirocket-react` - React component, hook, and state (Zustand) patterns
 - `busirocket-refactor-workflow` - Refactoring workflow
 
 ## How to Use

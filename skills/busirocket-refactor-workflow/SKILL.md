@@ -63,8 +63,8 @@ When referencing `@file` for a one-shot refactor:
 ## Related Skills
 
 - `busirocket-core-conventions` - File structure and boundaries
-- `busirocket-typescript-react-standards` - TypeScript standards to enforce
-- `busirocket-react-components-and-hooks` - Component/hook patterns
+- `busirocket-typescript-standards` - TypeScript standards to enforce
+- `busirocket-react` - Component/hook patterns
 
 ## How to Use
 

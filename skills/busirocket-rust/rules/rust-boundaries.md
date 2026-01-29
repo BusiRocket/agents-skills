@@ -2,11 +2,11 @@
 
 ## Goal
 
-Keep route handlers and command handlers thin.
+Keep handlers thin (e.g. HTTP route handlers, Tauri command handlers).
 
 ## Rule
 
-Route handlers or command handlers should be thin:
+Handlers should be thin:
 
 - Validate input
 - Call a single service function
@@ -15,13 +15,12 @@ Route handlers or command handlers should be thin:
 ## Examples
 
 ```rust
-// ✅ Correct - thin command handler
-// src-tauri/src/commands/create_invoice.rs
+// ✅ Correct - thin handler
+// src/commands/create_invoice.rs (or route handler)
 use crate::services::invoices::create_invoice;
 use crate::models::CreateInvoiceInput;
 
-#[tauri::command]
-pub async fn create_invoice_command(input: CreateInvoiceInput) -> Result<Invoice, String> {
+pub async fn create_invoice_handler(input: CreateInvoiceInput) -> Result<Invoice, String> {
     // Validate input
     if input.amount <= 0.0 {
         return Err("Amount must be positive".to_string());
@@ -35,10 +34,8 @@ pub async fn create_invoice_command(input: CreateInvoiceInput) -> Result<Invoice
 ```
 
 ```rust
-// ❌ Incorrect - fat command handler
-// src-tauri/src/commands/create_invoice.rs
-#[tauri::command]
-pub async fn create_invoice_command(input: CreateInvoiceInput) -> Result<Invoice, String> {
+// ❌ Incorrect - fat handler
+pub async fn create_invoice_handler(input: CreateInvoiceInput) -> Result<Invoice, String> {
     // Business logic should be in service
     let invoice = Invoice {
         id: generate_id(),
@@ -57,4 +54,4 @@ pub async fn create_invoice_command(input: CreateInvoiceInput) -> Result<Invoice
 
 - Keep handlers thin: validate, call service, return
 - Move business logic to services
-- Keep handlers focused on HTTP/command concerns
+- Keep handlers focused on transport/command concerns

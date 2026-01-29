@@ -6,17 +6,20 @@ Establish strict module layout conventions.
 
 ## Module Layout (STRICT)
 
-- `src-tauri/src/` is for Rust code only.
-- `src-tauri/src/services/`: external boundaries (IO, DB, network).
-- `src-tauri/src/utils/`: pure logic (no IO).
-- `src-tauri/src/models/`: domain types (one type per file).
+- `src/` is for Rust code only.
+- `src/services/`: external boundaries (IO, DB, network).
+- `src/utils/`: pure logic (no IO).
+- `src/models/`: domain types (one type per file).
 - No "misc" modules like `helpers.rs` or `common.rs`.
+
+In Tauri projects, this layout lives under `src-tauri/src/` (see
+`busirocket-tauri` skill).
 
 ## Examples
 
 ```rust
 // ✅ Correct - service in services/
-// src-tauri/src/services/invoices/create_invoice.rs
+// src/services/invoices/create_invoice.rs
 pub async fn create_invoice(input: CreateInvoiceInput) -> Result<Invoice, InvoiceError> {
     // External boundary (DB access)
 }
@@ -24,7 +27,7 @@ pub async fn create_invoice(input: CreateInvoiceInput) -> Result<Invoice, Invoic
 
 ```rust
 // ✅ Correct - pure logic in utils/
-// src-tauri/src/utils/invoices/format_amount.rs
+// src/utils/invoices/format_amount.rs
 pub fn format_amount(amount: f64) -> String {
     format!("${:.2}", amount)
 }
@@ -32,7 +35,7 @@ pub fn format_amount(amount: f64) -> String {
 
 ```rust
 // ✅ Correct - type in models/
-// src-tauri/src/models/invoice.rs
+// src/models/invoice.rs
 pub struct Invoice {
     pub id: String,
     pub amount: f64,
@@ -41,7 +44,7 @@ pub struct Invoice {
 
 ```rust
 // ❌ Incorrect - misc module
-// src-tauri/src/helpers.rs
+// src/helpers.rs
 pub fn format_amount() { /* ... */ }
 pub fn validate_input() { /* ... */ }
 pub fn parse_date() { /* ... */ }

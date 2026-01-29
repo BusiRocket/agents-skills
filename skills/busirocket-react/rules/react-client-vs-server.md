@@ -4,7 +4,7 @@
 
 Understand when to use Client vs Server Components in Next.js App Router.
 
-> **Note**: For detailed Next.js App Router patterns, see `busirocket-nextjs-route-handlers`.
+> **Note**: For detailed Next.js App Router patterns, see `busirocket-nextjs`.
 
 ## Rule
 

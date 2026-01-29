@@ -11,24 +11,24 @@ and other Agent Skills-compatible tools.
 
 - **`busirocket-core-conventions`** - General engineering conventions, file
   discipline, boundaries, naming/layout, and anti-patterns
-- **`busirocket-typescript-react-standards`** - TypeScript/React export
-  discipline, type conventions, Next.js special-file exceptions
-- **`busirocket-react-components-and-hooks`** - React component and hook
-  structure rules (one-component/one-hook per file)
-- **`busirocket-nextjs-route-handlers`** - Next.js App Router patterns, thin
-  route handlers, validation, response shapes
+- **`busirocket-typescript-standards`** - TypeScript export discipline, type
+  conventions, Next.js special-file exceptions
+- **`busirocket-react`** - React component and hook structure rules
+  (one-component/one-hook per file) plus Zustand state management
+- **`busirocket-nextjs`** - Next.js App Router patterns, thin route handlers,
+  validation, response shapes
 - **`busirocket-refactor-workflow`** - Strict refactoring workflow with quality
   gates
 - **`busirocket-tailwindcss-v4`** - Tailwind CSS v4 setup and styling strategy
-- **`busirocket-rust-tauri-standards`** - Rust/Tauri one-thing-per-file,
-  SQL/prompt separation, command checklist
+- **`busirocket-rust`** - Rust language and module standards
+  (one-thing-per-file, SQL/prompt separation, boundaries)
+- **`busirocket-tauri`** - Tauri-specific layout and commands checklist (desktop
+  apps)
 
 ### Optional Skills (Manual invocation only)
 
-- **`busirocket-supabase-boundaries`** - Supabase access patterns and service
-  boundaries (use `/busirocket-supabase-boundaries` when working with Supabase)
-- **`busirocket-react-state-management-zustand`** - Zustand state management
-  patterns (use `/busirocket-react-state-management-zustand` when using Zustand)
+- **`busirocket-supabase`** - Supabase access patterns and service boundaries
+  (use `/busirocket-supabase` when working with Supabase)
 
 ## Installation
 
@@ -61,9 +61,11 @@ Skills are automatically activated by agents when relevant tasks are detected.
 Optional skills can be invoked manually:
 
 ```
-/busirocket-supabase-boundaries
-/busirocket-react-state-management-zustand
+/busirocket-supabase
 ```
+
+Zustand state management patterns are included in **`busirocket-react`**; use
+`/busirocket-react` when working with Zustand.
 
 ## Development
 
