@@ -1,9 +1,9 @@
 ---
 name: busirocket-nextjs
 description:
-  Next.js App Router route handler patterns. Use when creating or refactoring
-  route.ts files, implementing API endpoints, validating request inputs, and
-  returning standardized JSON responses with proper status codes.
+  Applies Next.js App Router route handler patterns. Use when creating or
+  refactoring route.ts files, implementing API endpoints, validating request
+  inputs, and returning standardized JSON responses with proper status codes.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"

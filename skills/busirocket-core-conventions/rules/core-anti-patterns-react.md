@@ -1,10 +1,17 @@
 # React Anti-Patterns
 
+## Contents
+
+- [Goal](#goal)
+- [Rules](#rules)
+- [Examples](#examples)
+- [Best Practices](#best-practices)
+
 ## Goal
 
 Avoid React patterns that reduce maintainability and performance.
 
-## React Anti-Patterns
+## Rules
 
 - **Fetching/DB calls inside components**.
 - **Helpers inside components/hooks** (formatting, parsing, mapping) instead of

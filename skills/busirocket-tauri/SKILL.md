@@ -1,9 +1,9 @@
 ---
 name: busirocket-tauri
 description:
-  Tauri-specific standards for desktop apps. Use when creating Tauri commands,
-  configuring invoke handler and permissions, and applying Rust layout under
-  src-tauri.
+  Applies Tauri-specific standards for desktop apps. Use when creating Tauri
+  commands, configuring invoke handler and permissions, and applying Rust
+  layout under src-tauri.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"

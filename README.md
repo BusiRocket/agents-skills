@@ -17,6 +17,8 @@ and other Agent Skills-compatible tools.
   (one-component/one-hook per file) plus Zustand state management
 - **`busirocket-nextjs`** - Next.js App Router patterns, thin route handlers,
   validation, response shapes
+- **`busirocket-validation`** - Validation strategy (Zod schemas, guard helpers)
+  at boundaries
 - **`busirocket-refactor-workflow`** - Strict refactoring workflow with quality
   gates
 - **`busirocket-tailwindcss-v4`** - Tailwind CSS v4 setup and styling strategy
@@ -93,8 +95,18 @@ yarn install
 Each skill contains:
 
 - `SKILL.md` - Main instructions with frontmatter metadata
-- `references/` - Detailed documentation loaded on demand (progressive
-  disclosure)
+- `rules/` - Rule files loaded on demand (progressive disclosure)
+
+## Skill Authoring Best Practices
+
+This repo follows [Claude skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices). Checklist for maintainers:
+
+- [ ] Descriptions in third person (e.g. "Applies…", "Enforces…")
+- [ ] References one level deep (SKILL.md → rules only; no rule → rule links)
+- [ ] Forward slashes in paths (no Windows-style `\`)
+- [ ] Table of contents in rule files longer than 100 lines
+- [ ] No time-sensitive content (dates, "before/after X version")
+- [ ] Consistent terminology (route handler, services/, utils/, types/)
 
 ## License
 

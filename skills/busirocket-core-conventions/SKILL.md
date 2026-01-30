@@ -1,9 +1,9 @@
 ---
 name: busirocket-core-conventions
 description:
-  General engineering conventions optimized for AI agents. Use when creating or
-  refactoring codebases and you need strict file discipline, clear module
-  boundaries, naming/layout rules, and anti-pattern avoidance.
+  Applies general engineering conventions optimized for AI agents. Use when
+  creating or refactoring codebases and you need strict file discipline, clear
+  module boundaries, naming/layout rules, and anti-pattern avoidance.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"

@@ -1,10 +1,10 @@
 ---
 name: busirocket-react
 description:
-  React component and hook structure rules plus Zustand state management. Use
-  when writing or refactoring React components, extracting hooks, deciding
-  client vs server components, implementing global state (Zustand), modals, or
-  avoiding prop drilling.
+  Applies React component and hook structure rules plus Zustand state
+  management. Use when writing or refactoring React components, extracting
+  hooks, deciding client vs server components, implementing global state
+  (Zustand), modals, or avoiding prop drilling.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"

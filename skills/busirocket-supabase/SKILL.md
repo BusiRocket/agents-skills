@@ -1,9 +1,9 @@
 ---
 name: busirocket-supabase
 description:
-  Supabase access patterns and service boundaries. Use only when working with
-  Supabase projects. Centralize Supabase access in services/ and never call
-  Supabase directly from components/hooks/utils/route handlers.
+  Enforces Supabase access patterns and service boundaries. Use only when
+  working with Supabase projects. Centralizes Supabase access in services/ and
+  forbids calling Supabase from components/hooks/utils/route handlers.
 disable-model-invocation: true
 metadata:
   author: cristiandeluxe

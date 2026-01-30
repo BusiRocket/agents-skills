@@ -1,9 +1,9 @@
 ---
 name: busirocket-validation
 description:
-  Validation strategy using Zod for schemas and guard helpers for runtime
-  checks. Use when validating API responses, request inputs, or external data at
-  boundaries.
+  Applies validation strategy using Zod for schemas and guard helpers for
+  runtime checks. Use when validating API responses, request inputs, or
+  external data at boundaries.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
