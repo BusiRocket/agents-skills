@@ -89,6 +89,13 @@ yarn install
 - `npm run format` - Format all Markdown files with Prettier
 - `npm run format:check` - Check Markdown formatting without writing
   (CI-friendly)
+- `yarn validate` - Validate all skills with
+  [skills-ref](https://github.com/agentskills/agentskills/tree/main/skills-ref)
+  (frontmatter, naming). Uses the project venv if present (see below).
+- `yarn validate:install` - Create a Python venv at `.venv-validate` and install
+  `skills-ref`. Run once; then `yarn validate` uses it. Requires Python 3.11+ on
+  PATH.
+- `yarn validate:uninstall` - Remove the `.venv-validate` venv.
 
 ## Skill Structure
 

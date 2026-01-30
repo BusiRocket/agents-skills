@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+.venv-validate/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
