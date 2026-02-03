@@ -1,0 +1,40 @@
+# BusiRocket Agent Skills
+
+A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri projects. Skills follow the Agent Skills format (https://agentskills.io/specification).
+
+## Skills
+
+- busirocket-core-conventions: Applies general engineering conventions optimized for AI agents. Use when creating or refactoring codebases and you need strict file discipline, clear module boundaries, naming/layout rules, and anti-pattern avoidance.
+  skills/busirocket-core-conventions/SKILL.md
+
+- busirocket-nextjs: Applies Next.js App Router route handler patterns. Use when creating or refactoring route.ts files, implementing API endpoints, validating request inputs, and returning standardized JSON responses with proper status codes.
+  skills/busirocket-nextjs/SKILL.md
+
+- busirocket-react: Applies React component and hook structure rules plus Zustand state management. Use when writing or refactoring React components, extracting hooks, deciding client vs server components, implementing global state (Zustand), modals, or avoiding prop drilling.
+  skills/busirocket-react/SKILL.md
+
+- busirocket-refactor-workflow: Enforces strict refactoring workflow for TypeScript/React codebases. Use when refactoring files with multiple exports, splitting components/hooks/utils, moving inline types to types/, and enforcing post-refactor quality gates.
+  skills/busirocket-refactor-workflow/SKILL.md
+
+- busirocket-rust: Enforces Rust language and module standards for maintainable codebases. Use when writing Rust code, structuring modules, separating SQL/prompts from code, and enforcing one-thing-per-file discipline.
+  skills/busirocket-rust/SKILL.md
+
+- busirocket-supabase: Enforces Supabase access patterns and service boundaries. Use only when working with Supabase projects. Centralizes Supabase in a dedicated layer and forbids calling Supabase from outside that boundary.
+  skills/busirocket-supabase/SKILL.md
+
+- busirocket-tailwindcss-v4: Applies Tailwind CSS v4 setup and styling strategy. Use when configuring Tailwind v4, writing component styles, deciding between utility classes and custom CSS, and avoiding style drift.
+  skills/busirocket-tailwindcss-v4/SKILL.md
+
+- busirocket-tauri: Applies Tauri-specific standards for desktop apps. Use when creating Tauri commands, configuring invoke handler and permissions, and applying Rust layout under src-tauri.
+  skills/busirocket-tauri/SKILL.md
+
+- busirocket-typescript-standards: Enforces TypeScript standards for maintainable codebases. Use when creating or refactoring TS/TSX to enforce one-thing-per-file, type conventions, and Next.js special-file export exceptions.
+  skills/busirocket-typescript-standards/SKILL.md
+
+- busirocket-validation: Applies validation strategy using Zod for schemas and guard helpers for runtime checks. Use when validating API responses, request inputs, or external data at boundaries.
+  skills/busirocket-validation/SKILL.md
+
+## Links
+
+- [Agent Skills specification](https://agentskills.io/specification)
+- [Integrate skills into your agent](https://agentskills.io/integrate-skills)

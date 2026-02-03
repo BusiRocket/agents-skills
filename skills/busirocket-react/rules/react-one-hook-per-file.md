@@ -43,8 +43,8 @@ export const INVOICE_DEFAULT = {} // Not allowed!
 
 ## Complexity
 
-- Keep hook cognitive complexity ≤ 15; extract helpers to `utils/` or split
-  into smaller hooks when needed.
+- Keep hook cognitive complexity ≤ 15; extract helpers to `utils/` or split into
+  smaller hooks when needed.
 
 ## Best Practices
 

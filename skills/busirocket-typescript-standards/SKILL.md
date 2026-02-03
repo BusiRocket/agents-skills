@@ -1,8 +1,8 @@
 ---
 name: busirocket-typescript-standards
 description:
-  Enforces TypeScript standards for maintainable codebases. Use when creating
-  or refactoring TS/TSX to enforce one-thing-per-file, type conventions, and
+  Enforces TypeScript standards for maintainable codebases. Use when creating or
+  refactoring TS/TSX to enforce one-thing-per-file, type conventions, and
   Next.js special-file export exceptions.
 metadata:
   author: cristiandeluxe

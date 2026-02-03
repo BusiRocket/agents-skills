@@ -10,8 +10,8 @@ Establish consistent TypeScript language and style conventions.
 - `const` by default; `let` only when necessary.
 - English-only code, comments, and identifiers.
 - Keep cognitive complexity per function ≤ 15; extract helpers when in doubt.
-- JSDoc on public functions and components (params and returns); keep
-  comments focused on "why" and non-obvious invariants.
+- JSDoc on public functions and components (params and returns); keep comments
+  focused on "why" and non-obvious invariants.
 
 ## Examples
 

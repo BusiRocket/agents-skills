@@ -48,13 +48,13 @@ export const InvoiceCard = (props: InvoiceCardProps) => {
 
 ## Common Issues & Fixes
 
-| Issue            | Fix                                                |
-|------------------|----------------------------------------------------|
-| Type error: `any`| Use `unknown` and narrow with type guards          |
-| Unused import    | Remove or use the import                           |
-| Missing return type | Add explicit return type annotation             |
-| Circular dependency | Move shared types to `types/` folder            |
-| File too large   | Split into smaller focused files                   |
+| Issue               | Fix                                       |
+| ------------------- | ----------------------------------------- |
+| Type error: `any`   | Use `unknown` and narrow with type guards |
+| Unused import       | Remove or use the import                  |
+| Missing return type | Add explicit return type annotation       |
+| Circular dependency | Move shared types to `types/` folder      |
+| File too large      | Split into smaller focused files          |
 
 ## Best Practices
 

@@ -11,13 +11,13 @@ Keep files small and maintainable.
 
 ## File Size Table
 
-| File Type   | Target Lines | Max Lines |
-|------------|--------------|-----------|
-| Component  | 30–60        | 120       |
-| Hook       | 30–60        | 100       |
-| Utility    | 20–40        | 80        |
-| Type file  | 10–30        | 50        |
-| Constants  | 20–50        | 100       |
+| File Type | Target Lines | Max Lines |
+| --------- | ------------ | --------- |
+| Component | 30–60        | 120       |
+| Hook      | 30–60        | 100       |
+| Utility   | 20–40        | 80        |
+| Type file | 10–30        | 50        |
+| Constants | 20–50        | 100       |
 
 ## Examples
 

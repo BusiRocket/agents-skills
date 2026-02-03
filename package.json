@@ -4,11 +4,16 @@
   "description": "A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri projects",
   "private": true,
   "scripts": {
+    "build": "yarn format && yarn version:check && yarn validate && yarn generate:llms-txt && yarn to-prompt:file",
     "format": "prettier --write \"**/*.md\"",
     "format:check": "prettier --check \"**/*.md\"",
+    "generate:llms-txt": "node scripts/generate-llms-txt.mjs",
+    "to-prompt": "node scripts/to-prompt.mjs",
+    "to-prompt:file": "node scripts/to-prompt.mjs > available_skills.xml",
     "validate": "node scripts/validate-skills.mjs",
     "validate:install": "node scripts/validate-install.mjs",
-    "validate:uninstall": "node scripts/validate-uninstall.mjs"
+    "validate:uninstall": "node scripts/validate-uninstall.mjs",
+    "version:check": "node scripts/check-version.mjs"
   },
   "devDependencies": {
     "prettier": "^3.8.1"

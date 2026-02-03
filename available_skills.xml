@@ -1,0 +1,112 @@
+<available_skills>
+<skill>
+<name>
+busirocket-core-conventions
+</name>
+<description>
+Applies general engineering conventions optimized for AI agents. Use when creating or refactoring codebases and you need strict file discipline, clear module boundaries, naming/layout rules, and anti-pattern avoidance.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-core-conventions/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-nextjs
+</name>
+<description>
+Applies Next.js App Router route handler patterns. Use when creating or refactoring route.ts files, implementing API endpoints, validating request inputs, and returning standardized JSON responses with proper status codes.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-nextjs/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-react
+</name>
+<description>
+Applies React component and hook structure rules plus Zustand state management. Use when writing or refactoring React components, extracting hooks, deciding client vs server components, implementing global state (Zustand), modals, or avoiding prop drilling.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-react/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-refactor-workflow
+</name>
+<description>
+Enforces strict refactoring workflow for TypeScript/React codebases. Use when refactoring files with multiple exports, splitting components/hooks/utils, moving inline types to types/, and enforcing post-refactor quality gates.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-refactor-workflow/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-rust
+</name>
+<description>
+Enforces Rust language and module standards for maintainable codebases. Use when writing Rust code, structuring modules, separating SQL/prompts from code, and enforcing one-thing-per-file discipline.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-rust/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-supabase
+</name>
+<description>
+Enforces Supabase access patterns and service boundaries. Use only when working with Supabase projects. Centralizes Supabase in a dedicated layer and forbids calling Supabase from outside that boundary.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-supabase/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-tailwindcss-v4
+</name>
+<description>
+Applies Tailwind CSS v4 setup and styling strategy. Use when configuring Tailwind v4, writing component styles, deciding between utility classes and custom CSS, and avoiding style drift.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-tailwindcss-v4/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-tauri
+</name>
+<description>
+Applies Tauri-specific standards for desktop apps. Use when creating Tauri commands, configuring invoke handler and permissions, and applying Rust layout under src-tauri.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-tauri/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-typescript-standards
+</name>
+<description>
+Enforces TypeScript standards for maintainable codebases. Use when creating or refactoring TS/TSX to enforce one-thing-per-file, type conventions, and Next.js special-file export exceptions.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-typescript-standards/SKILL.md
+</location>
+</skill>
+<skill>
+<name>
+busirocket-validation
+</name>
+<description>
+Applies validation strategy using Zod for schemas and guard helpers for runtime checks. Use when validating API responses, request inputs, or external data at boundaries.
+</description>
+<location>
+/Users/cristiandeluxe/p/agents-skills/skills/busirocket-validation/SKILL.md
+</location>
+</skill>
+</available_skills>

@@ -2,8 +2,8 @@
 name: busirocket-rust
 description:
   Enforces Rust language and module standards for maintainable codebases. Use
-  when writing Rust code, structuring modules, separating SQL/prompts from
-  code, and enforcing one-thing-per-file discipline.
+  when writing Rust code, structuring modules, separating SQL/prompts from code,
+  and enforcing one-thing-per-file discipline.
 metadata:
   author: cristiandeluxe
   version: "1.0.0"
