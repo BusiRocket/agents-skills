@@ -1,5 +1,12 @@
 # Agent Skills
 
+> **Archived — superseded by [BusiRocket/agents-tools](https://github.com/BusiRocket/agents-tools).**
+>
+> Every rule in this repository has been migrated there, where the same guidance
+> is path-scoped so it loads only for matching files, and is compiled and linked
+> out to Cursor, Claude Code, Codex, Copilot, Gemini CLI and ~20 other agents.
+> This repository is kept read-only for reference; no further updates.
+
 A collection of reusable Agent Skills for TypeScript/React/Next.js/Rust/Tauri
 projects. These skills follow the [Agent Skills](https://agentskills.io/) format
 and are compatible with Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI,
